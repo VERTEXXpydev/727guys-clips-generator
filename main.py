@@ -2,7 +2,7 @@ import requests
 import json
 
 
-def api_request(endpoint: str, parameters):
+def api_request(endpoint: str, parameters: dict):
     return requests.get(f'https://osu.ppy.sh/api/{endpoint}', params=parameters).json()
 
 
